@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 const routes = [
     { path: '/', component: () => import(/* webpackChunkName: "AllTrashs" */ '../pages/HomePage.vue') },
     { path: '/dechets', component: () => import(/* webpackChunkName: "AllTrashs" */ '../pages/TrashList.vue') },
@@ -6,7 +6,7 @@ const routes = [
     { path: '/historique', component: () => import(/* webpackChunkName: "AllTrashs" */ '../pages/TrashHistoric.vue') }
 ]
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes
 })
 export default router

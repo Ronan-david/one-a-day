@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### SCSS
+Le css est en mobile first. Il faut inclure les mixins de media query pour tablette puis écrans classiques.

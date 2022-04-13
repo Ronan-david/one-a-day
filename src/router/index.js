@@ -6,7 +6,7 @@ const routes = [
     { path: '/historique', component: () => import(/* webpackChunkName: "AllTrashs" */ '../pages/TrashHistoric.vue') }
 ]
 const router = createRouter({
-    history: createWebHistory('/picking-trash-daily'),
+    history: createWebHistory('/picking-trash-daily/'),
     routes
 })
 export default router

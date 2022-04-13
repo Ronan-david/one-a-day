@@ -21,9 +21,6 @@
                     >Retirer</button>
                 </div>
             </div>
-            <div v-if="trashPicked || trashDropped" class="trashCard__alert">
-                <p>{{ trashPicked ? 'Ajouté !' : 'Retiré !' }}</p>
-            </div>
             <div class="col-12">
                 <div v-if="trashPickedFromStore">
                     <p class="">Vous avez ramassé pour {{ trashPickedFromStore.weight }} kg de ce déchet</p>
@@ -32,14 +29,21 @@
                 <p v-else>Vous n'avez pas encore ramassé ce déchet</p>
             </div>
         </div>
-
+        <Alert-component
+            v-if="trashPicked || trashDropped"
+            :message="trashPicked ? 'Ajouté !' : 'Retiré !'"
+        />
     </section>
 </template>
 <script>
 import { useRoute } from 'vue-router'
 import { useStore } from 'vuex'
 import { ref, computed } from 'vue'
+import AlertComponent from '../components/Alert'
 export default {
+    components: {
+        AlertComponent
+    },
     setup() {
         const route = useRoute()
         const store = useStore()
@@ -81,6 +85,9 @@ export default {
 </script>
 <style lang="scss">
 .trashCard {
+    &_container {
+        position: relative;
+    }
     &__card {
         max-width: 90%;
         margin: 0 auto;
@@ -156,22 +163,6 @@ export default {
             border-color: #e0e0e0;
             color: #000;
             cursor: not-allowed;
-        }
-    }
-    &__alert {
-        background-color: #6388f0;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #6388f0;
-
-        p {
-            margin: 0;
         }
     }
 }

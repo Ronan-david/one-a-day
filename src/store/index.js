@@ -22,7 +22,6 @@ const store = createStore({
     },
     mutations: {
         ADD_TO_TRASH_LIST(state, payload) {
-            
             let found = state.trashPickedList.find(item => {
                 if (item.id === payload.id) {
                     item.count++
@@ -31,7 +30,7 @@ const store = createStore({
                 }
             })
             if (!found) {
-                payload.count++
+                payload.count = 1
                 state.trashPickedList.push(deepCopyObject(payload))
             }
         },

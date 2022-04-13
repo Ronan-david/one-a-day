@@ -11,3 +11,14 @@
 @mixin for-big-desktop-up {
     @media (min-width: 1800px) { @content; }
 }
+
+// Animation
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin animate($animation, $duration, $method, $times) {
+    animation: $animation $duration $method $times;
+}

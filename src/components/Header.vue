@@ -18,7 +18,7 @@ export default {
     const links = [
       {
         name: 'Accueil',
-        path: '/'
+        path: '/accueil'
       },
       {
         name: 'Déchets',

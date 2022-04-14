@@ -1,38 +1,47 @@
 [
     {
         "id": "1",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        "image": "https://thumbs.dreamstime.com/t/la-bouteille-de-vin-isol%C3%A9-18039308.jpg",
         "name": "Bouteille de vin",
         "description:": "bla bla bla",
-        "weight": 0.5,
-        "category": "verre",
+        "weight": 0.3,
+        "category": "Verre",
         "count": 0
     },
     {
         "id": "2",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        "image": "https://www.enviro2b.com/wp-content/uploads/2010/10/bouteille_pet-150x150.jpg",
         "name": "Bouteille en plastique", 
         "description:": "bla bla bla",
-        "weight": 0.25,
-        "category": "plastique",
+        "weight": 0.2,
+        "category": "Plastique",
         "count": 0
     },
     {
         "id": "3",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        "image": "https://www.boobaan.fr/wp-content/uploads/2009/08/Coca-Cola-Classic.png",
         "name": "Cannette", 
         "description:": "Bla bla bla",
-        "weight": 0.25,
-        "category": "plastique",
+        "weight": 0.2,
+        "category": "Aluminium",
         "count": 0
     },
     {
         "id": "4",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        "image": "https://www.eocrep.com/fr/images/ajoute/produit/87-image_180x180.jpg",
         "name": "Sac en papier", 
         "description:": "bla bla bla",
-        "weight": 0.25,
-        "category": "plastique",
+        "weight": 0.1,
+        "category": "Papier",
+        "count": 0
+    },
+    {
+        "id": "5",
+        "image": "http://www.ecogeste.fr/module/img/produits/sac-plastique.jpg",
+        "name": "Sac en plastique", 
+        "description:": "bla bla bla",
+        "weight": 0.01,
+        "category": "Plastique",
         "count": 0
     }
 ]

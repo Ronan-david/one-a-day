@@ -43,15 +43,10 @@ export default {
             }            
         }
         &__card {
-            border: 1px solid #ccc;
             width: 150px;
             margin-bottom: 20px;
             padding: 5px;
             cursor: pointer;
-
-            @include for-tablet-portrait-up {
-                width: 200px;
-            }
 
             &-list {
                 padding: 0 15px;
@@ -62,8 +57,12 @@ export default {
             }
 
             &-img {
-                width: 100px;
+                width: 100%;
                 height: 100px;
+            }
+
+            &-name {
+                margin-top: 10px;
             }
         }
     }

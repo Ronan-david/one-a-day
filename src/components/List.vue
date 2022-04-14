@@ -5,7 +5,7 @@
             <h4>{{ title }}</h4>
         </div>
         <div class="flex trashList__filters">
-            <input class="trashList__input" type="text" placeholder="Trouver votre déchet" v-model="trashItemInput">
+            <input class="trashList__input" type="text" placeholder="Trouver un déchet" v-model="trashItemInput">
             <div class="form-group">
                 <select class="form-control" id="filter" v-model="selected">
                     <option disabled value="">Choisissez une catégorie</option>
